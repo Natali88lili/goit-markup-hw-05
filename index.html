@@ -26,8 +26,8 @@
       <div class="container header-wrap">
         <nav class="nav">
           <a href="./index.html"
-            ><span class="logo-text">web</span
-            ><span class="logo-text logo-text-right">studio</span></a
+            ><span class="logo-text">web</span>
+            <span class="logo-text logo-text-right">studio</span></a
           >
           <ul class="nav-list">
             <li><a class="nav-item-text active" href="">Studio</a></li>
@@ -60,7 +60,9 @@
       <section class="section-hero">
         <div class="container hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- section-features -->
@@ -428,5 +430,11 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal" type="button" data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
